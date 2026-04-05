@@ -92,7 +92,7 @@ Extracted **hidden metadata** from publicly available documents (PDFs, Word docs
 Harvested employee email addresses and checked for **credential exposure in known data breaches**:
  
 - Collected emails via OSINT (LinkedIn, company website, metadata)
-- Built a **custom Python script** using the HIBP API to batch-check all discovered emails
+- Built a **[HIBP Batch Checker](https://github.com/niha-v/Cybersecurity-Internship/blob/main/HIBP.py)** using the HIBP API to batch-check all discovered emails
 - Identified accounts with exposed credentials from past breaches — a critical risk for credential stuffing attacks
  
 ---
@@ -154,7 +154,7 @@ Ran authenticated and unauthenticated **Nessus scans** against both the internal
  
 ### 3.2 Nessus Results Parser (Custom Python Tool)
  
-Raw Nessus output contains thousands of rows of data — difficult to use directly for reporting. I built a **[custom Python parser](https://github.com/niha-v/Cybersecurity-Internship/blob/main/Python%20Parser.py)
+Raw Nessus output contains thousands of rows of data — difficult to use directly for reporting. I built a **[Nessus Parser](https://github.com/niha-v/Cybersecurity-Internship/blob/main/Python%20Parser.py)**
  
 - Parse Nessus `.nessus` XML export files
 - Filter and deduplicate findings
@@ -198,8 +198,8 @@ Three distinct phishing concepts were developed, each targeting a different psyc
  
 | Tool | Language | Purpose |
 |------|----------|---------|
-| **Nessus Parser** | Python | Parses raw Nessus scan output into clean, reportable format |
-| **[HIBP Batch Checker](https://github.com/niha-v/Cybersecurity-Internship/blob/main/HIBP.py) | Python | Bulk-checks employee emails against Have I Been Pwned API |
+| **[Nessus Parser](https://github.com/niha-v/Cybersecurity-Internship/blob/main/Python%20Parser.py)** | Python | Parses raw Nessus scan output into clean, reportable format |
+| **[HIBP Batch Checker](https://github.com/niha-v/Cybersecurity-Internship/blob/main/HIBP.py)** | Python | Bulk-checks employee emails against Have I Been Pwned API |
  
 Both scripts were written to solve real inefficiencies encountered during the engagement and significantly improved reporting speed and accuracy.
  
