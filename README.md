@@ -1,4 +1,4 @@
-# Offensive Security Assessment Report
+# Security Assessment Report
 ![Role](https://img.shields.io/badge/Role-Cybersecurity%20Intern-blue?style=for-the-badge&logo=shield)
 ![Duration](https://img.shields.io/badge/Duration-1%20Month-green?style=for-the-badge&logo=clockify)
 ![Type](https://img.shields.io/badge/Assessment-Grey%20Box-orange?style=for-the-badge&logo=target)
