@@ -61,7 +61,6 @@ Conducted multi-layered subdomain discovery to map the full external attack surf
 - Used **bbot** for automated, recursive subdomain enumeration combining multiple passive and active sources
 - Sources included: certificate transparency logs (crt.sh), DNS brute-forcing, web crawling, and third-party APIs
 - Discovered development, staging, and forgotten subdomains exposing internal services
-- Parsed and deduplicated large result sets using a **custom Python parser** (see [Custom Tools](#-custom-tools--scripts))
  
 ```bash
 # Example bbot workflow (generic)
@@ -155,7 +154,7 @@ Ran authenticated and unauthenticated **Nessus scans** against both the internal
  
 ### 3.2 Nessus Results Parser (Custom Python Tool)
  
-Raw Nessus output contains thousands of rows of data — difficult to use directly for reporting. I built a **custom Python parser** to:
+Raw Nessus output contains thousands of rows of data — difficult to use directly for reporting. I built a **[custom Python parser](https://github.com/niha-v/Cybersecurity-Internship/blob/main/Python%20Parser.py)
  
 - Parse Nessus `.nessus` XML export files
 - Filter and deduplicate findings
@@ -199,8 +198,8 @@ Three distinct phishing concepts were developed, each targeting a different psyc
  
 | Tool | Language | Purpose |
 |------|----------|---------|
-| **Nessus XML Parser** | Python | Parses raw Nessus scan output into clean, reportable format |
-| **HIBP Batch Checker** | Python | Bulk-checks employee emails against Have I Been Pwned API |
+| **Nessus Parser** | Python | Parses raw Nessus scan output into clean, reportable format |
+| **[HIBP Batch Checker](https://github.com/niha-v/Cybersecurity-Internship/blob/main/HIBP.py) | Python | Bulk-checks employee emails against Have I Been Pwned API |
  
 Both scripts were written to solve real inefficiencies encountered during the engagement and significantly improved reporting speed and accuracy.
  
